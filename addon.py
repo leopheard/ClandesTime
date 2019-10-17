@@ -1,4 +1,4 @@
--from xbmcswift2 import Plugin, xbmcgui
+from xbmcswift2 import Plugin, xbmcgui
 from resources.lib import mainaddon
 
 plugin = Plugin()

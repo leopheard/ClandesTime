@@ -17,14 +17,14 @@ def get_playable_podcast1(soup1):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-            thumbnail = content.find('img')
-            thumbnail = desc.get_text('src')
+#            thumbnail = content.find('img')
+#            thumbnail = thumbnail.get('src')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': thumbnail,
+                'thumbnail': "https://www.spyculture.com/wp-content/uploads/ClandesTime-Logo1.jpg",
         }
         subjects.append(item)
     return subjects
@@ -48,14 +48,14 @@ def get_playable_podcast(soup1):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-            thumbnail = content.find('img')
-            thumbnail = desc.get_text('src')
+#            thumbnail = content.find('img')
+#            thumbnail = thumbnail.get('src')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': thumbnail,
+                'thumbnail': "https://www.spyculture.com/wp-content/uploads/ClandesTime-Logo1.jpg",
         }
         subjects.append(item)
     return subjects
